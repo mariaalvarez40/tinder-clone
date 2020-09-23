@@ -9,11 +9,11 @@ function TinderCards() {
   const [people, setPeople] = useState([
     {
       name: "test",
-      url: "https://www.fillmurray.com/640/360", 
+      url: "http://via.placeholder.com/640x360", 
     },
     {
       name: "alvarez",
-      url: "https://www.fillmurray.com/640/360",
+      url: "http://via.placeholder.com/640x360",
     },
   ]);
 
