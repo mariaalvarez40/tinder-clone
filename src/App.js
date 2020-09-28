@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import TinderCards from "./TinderCards";
+
 import "./App.css";
 import {
   BrowserRouter as Router,
