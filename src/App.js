@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import TinderCards from "./TinderCards";
 import Chats from "./Chats";
+
 import SwipeButtons from "./SwipeButtons";
 
 import "./App.css";
@@ -18,14 +19,19 @@ function App() {
      <Router>
         <Switch>
           {/* //default root at the bottom  */}
+          <Route path="/chat/:person">
+            <Header backButton="/" />
+            <Chats />
+            
+          </Route>
 
           <Route path="/chat">
             <Header backButton="/" />  
               <Chats/>
           </Route>
+
           <Route path="/">
             <Header />
-
             <TinderCards />
             <SwipeButtons />
           </Route>
