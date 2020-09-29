@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import TinderCards from "./TinderCards";
+import Chats from "./Chats";
 import SwipeButtons from "./SwipeButtons";
 
 import "./App.css";
@@ -14,15 +15,17 @@ function App() {
   return (
     <div className="App">
       {/* //if you want header to appear on all pages place outside router  */}
-      <Header />
-
      <Router>
         <Switch>
           {/* //default root at the bottom  */}
+
           <Route path="/chat">
-            <h1>I am chat</h1>
+            <Header backButton="/" />  
+              <Chats/>
           </Route>
           <Route path="/">
+            <Header />
+
             <TinderCards />
             <SwipeButtons />
           </Route>
