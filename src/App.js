@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import TinderCards from "./TinderCards";
+import SwipeButtons from "./SwipeButtons";
 
 import "./App.css";
 import {
@@ -23,6 +24,7 @@ function App() {
           </Route>
           <Route path="/">
             <TinderCards />
+            <SwipeButtons />
           </Route>
          
         </Switch>

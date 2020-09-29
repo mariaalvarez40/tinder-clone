@@ -20,7 +20,8 @@ function TinderCards() {
       setPeople(snapshot.docs.map((doc) => doc.data()))
     );
     return () => {
-      //clean up to listener
+      //clean up to listener 
+      //avoid listening to multiple events
       unsubscribe();
     };
   },[]);
